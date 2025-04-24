@@ -8,6 +8,7 @@
     --cinza-medio: #888888;
     --background-color: #01080E;
     --text-color: #fff;
+    --offwhite: #E1E1E1;
     --font-family: "Prompt", sans-serif;
 }
 
@@ -32,6 +33,8 @@ body{
     padding: 3.5em 0;
 }
 
+
+/*Menu navegação lateral*/
 .menu_lateral{
     background: var(--cinza);
     border-radius: 10px;
@@ -58,11 +61,117 @@ body{
 }
 
 
-.publicar-botao{
-    background: transparent;
+.lista-item:first-of-type a{
     border: 1px solid var(--verde-destaque);
     border-radius: 8px;
     padding: 0.75em 1em;
     color: var(--verde-destaque);
     width: 100%;
+}
+
+
+
+
+/*Container main*/
+.container-content{
+    display: flex;
+    gap: 24px;
+    background: var(--cinza);
+    padding: 32px;
+    border-radius: 8px;
+}
+
+
+/*Container Imagaem*/
+.container-upload-image{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container-image{
+    background: var(--cinza-medio);  
+    border-radius: 8px;
+}
+
+.container-image img{
+    margin: 24px 16px;
+    border-radius: 8px; 
+
+}
+
+.container-imagem-button{
+    padding: 12px 0;
+    background-color: transparent;
+    border: 1px solid var(--cinza-medio);
+    border-radius: 8px;
+    color: var(--cinza-medio);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container-image-nome{
+    display: flex;
+
+    gap: 8px;
+    font-size: 15px;
+    color: var(--cinza-medio)
+}
+
+/*Container Form*/
+
+.container-form-title{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.project-form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 40px 0 ;
+}
+
+.project-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#project-name, #project-description, #project-tags{
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    background-color: var(--cinza-medio);
+    color: var(--cinza);
+
+}
+
+#project-description{
+    width: 392px;
+    height: 169px;
+}
+
+.cta-form-button{
+    display: flex;
+    gap: 24px;
+}
+
+.button-discard{
+    color: var(--verde-destaque);
+    border: 1px solid var(--verde-destaque);
+    background-color: transparent;
+}
+
+.button-publish{
+    color: var(--cinza);
+    background-color: var(--verde-destaque);
+}
+
+.button-publish, .button-discard{
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
 }

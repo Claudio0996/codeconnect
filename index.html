@@ -17,6 +17,7 @@
 <body>
 
     <aside class="menu_lateral">
+
         <a href=""#>
             <img src="./img//Logo.svg" alt="Logo do arquivo" class="menu_lateral-logo">
         </a>
@@ -24,7 +25,7 @@
         <nav class="menu_lateral-nav">
             <ul class="nav-lista">
                 <li class="lista-item">
-                    <a href="#" class="publicar-botao">Publicar</a>
+                    <a href="#">Publicar</a>
                 </li>
                 <li class="lista-item">
                     <a href="#">
@@ -48,12 +49,60 @@
                     <a href="#">
                         <img class="lista-item-imagem" src="./img/logout.svg" alt="Imagem do Feed de noticias">
                         <p class="lista-item-texto">Sair</p> 
-                    </a>
-                    
+                    </a>                    
                 </li>
             </ul>
         </nav>
     </aside>
+
+    <main class="container-content">
+        <div class="container-upload-image">
+            <div class="container-image">
+                <img src="./img/imagem1.png" alt="">
+            </div>
+            <button class="container-imagem-button">Carregar Imagem</button>
+            <div class="container-image-nome">
+                <p>image_projeto.png</p>
+                <img src="./img/close.svg" alt="">
+            </div>
+        </div>
+
+        <div class="container-form">
+            <h1 class="container-form-title">Novo Projeto</h1>
+
+            <div class="form-wrapper">
+                <form id="project-publish">
+                    <div class="project-form-container">
+                        <div class="project-input-container">
+                            <label for="project-name" id="form-title">Nome do Projeto</label>
+                            <input type="text" id="project-name">
+                        </div>
+    
+                        <div class="project-input-container">
+                            <label for="project-description" id="form-description">Descriçao</label>
+                            <textarea id="project-description"></textarea>
+                        </div>
+
+
+                        <div class="project-input-container">
+                            <label for="project-tags">Tags</label>
+                            <input type="text" id="project-tags">
+                            <ul class="tag-list">
+
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="cta-form-button">
+                    <button class="button-discard">Descartar</button>
+                    <button class="button-publish" form="project-publish">Publicar</button>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
 </body>
 
 </html>
